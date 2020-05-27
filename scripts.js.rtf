@@ -14,8 +14,13 @@ let secondTime = $('#seconds').val()\
 let distance = $('#distance').val()\
 let radioValue = $("input[name='unit']:checked").val();\
 console.log(radioValue)  \
-let input = `$\{hourTime\}, $\{minuteTime\}, $\{secondTime\}, $\{distance\}, $\{radioValue\}`\
-$("#output").text(input)   \
+let readout = `$\{hourTime\}, $\{minuteTime\}, $\{secondTime\}, $\{distance\}, $\{radioValue\}`\
+let fart = "fart"\
+\
+if(radioValue === "mile")\
+$("#output").text(readout)\
+if(radioValue === "kilometer")\
+$("#output").text(fart)   \
  \})\
 \})\
 //     paceGetter($('#minutes').val(), $('#seconds').val(), $('#distance').val());\
